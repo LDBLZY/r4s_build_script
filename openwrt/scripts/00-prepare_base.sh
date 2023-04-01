@@ -42,7 +42,7 @@ fi
 #################################################################
 
 # default LAN IP
-sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
 
 # Use nginx instead of uhttpd
 sed -i 's/+uhttpd /+luci-nginx /g' feeds/luci/collections/luci/Makefile
